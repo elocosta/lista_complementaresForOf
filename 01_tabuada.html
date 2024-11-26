@@ -7,6 +7,15 @@
     */
 
     //Entrada
+    let multiplicador =  [1, 2, 3, 4, 5, 6, 7, 8, 9]
+    let tabuada = Number(prompt(`Por qual número você deseja multiplicar`));
+    let resultado = [];
+
+    for(let numero of multiplicador) {
+        let resultado = numero * tabuada;
+        document.write(`${tabuada} * ${numero} = ${resultado} <br>`);
+    }
+
 
 
     //Processamento
