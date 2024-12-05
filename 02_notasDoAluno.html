@@ -6,12 +6,18 @@
     Identifique a maior nota, a menor nota e também calcule a média obtida pelo aluno.
     */
 
-    //Entrada
+    const notasAluno = [7, 5, 9, 8];
 
+    notasAluno.sort(function(a,b){
+    return a-b
+    })
+    let somaNotas = 0 
+    let maiorNota = notasAluno[notasAluno.length - 1]
+    let menorNota = notasAluno[0]
+    for(let item of notasAluno){
+    somaNotas += item
+    }
 
-    //Processamento
+    document.write(`Maior nota = ${maiorNota} <br> Menor nota = ${menorNota} <br> Média = ${somaNotas/notasAluno.length}`)
 
-
-    //Saída
-
-</script>
+    </script>
